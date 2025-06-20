@@ -28,5 +28,9 @@ def compte():
     return render_template('index.html')
 
 #lancer
+import os
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Render définit cette variable automatiquement
+    app.run(host="0.0.0.0", port=port)
+
