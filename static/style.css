@@ -1,0 +1,56 @@
+/* ---- STYLE GÉNÉRAL DU CORPS DE LA PAGE ---- */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif; /*  police moderne */
+  background-color: #f0f4f8;                   /* Couleur de fond très claire et douce */
+  text-align: center;                          /* Centre tout le contenu horizontalement */
+  padding: 50px;                               /* Marge intérieure autour du contenu */
+}
+
+/* ---- TITRES ---- */
+h2 {
+  color: #2c3e50; /* Couleur foncée pour les titres */
+}
+
+/* ---- FORMULAIRE ---- */
+form {
+  margin-top: 20px; /* Espace au-dessus du formulaire */
+}
+
+/* ---- CHAMPS DE TEXTE  ---- */
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 10px;                    /* Espace intérieur du champ */
+  font-size: 16px;                  /* Taille de la police lisible */
+  border-radius: 6px;               /* Bords arrondis */
+  border: 1px solid #ccc;           /* Bordure grise légère */
+  width: 250px;                     /* Largeur fixe pour uniformiser les champs */
+}
+
+/* ---- BOUTONS ---- */
+button {
+  padding: 10px 20px;               /* Espace intérieur : vertical x horizontal */
+  background-color: #4a90e2;        /* Bleu vif pour attirer l’attention */
+  color: white;                     /* Texte blanc lisible sur fond bleu */
+  border: none;                     /* Pas de bordure supplémentaire */
+  border-radius: 8px;               /* Coins bien arrondis */
+  font-size: 16px;                  /* Texte lisible et accessible */
+  cursor: pointer;                  /* Curseur en forme de main au survol */
+  margin-top: 10px;                 /* Espace au-dessus du bouton */
+}
+
+/* ---- AU SURVOL DU BOUTON ---- */
+button:hover {
+  background-color: #357abd;        /* Bleu un peu plus foncé pour l’effet hover */
+}
+
+/* ---- LIENS ---- */
+a {
+  display: inline-block;            /* Permet de leur donner des marges comme un bloc */
+  margin-top: 15px;                 /* Espace au-dessus des liens */
+  text-decoration: none;            /* Supprime le soulignement */
+  color: #4a90e2;                   /* Même bleu que le bouton */
+}
+/* ---- ajouter dans les html : <head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head> ---- */

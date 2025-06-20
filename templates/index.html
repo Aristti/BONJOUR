@@ -1,0 +1,7 @@
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<form action="/hello" method="post">
+    <input type="text" name="prenom" required>
+    <button type="submit">Dire bonjour</button>
+</form>
